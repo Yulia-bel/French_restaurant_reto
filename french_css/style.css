@@ -1,0 +1,378 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: white;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  padding: 30px;
+  display: inline-flex;
+}
+
+header img {
+  width: 130px;
+  height: 130px;
+}
+
+.adress_menu {
+
+  width: 1300px;
+  padding: 20px;
+}
+
+header p {
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 13px;
+  margin-left: 160px;
+  position: relative;
+
+}
+
+ul.menu {
+  list-style-type: none;
+  margin-left: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  padding: 30px 60px;
+  text-decoration: none;
+  color: black;
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 18px;
+}
+
+.breadcrumbs {
+  position: absolute;
+  top: 170px;
+}
+ul.breadcrumbs {
+  list-style-type: none;
+  padding-right: 40px;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #60369C ;
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 12px;
+}
+
+.breadcrumbs_element:not(:last-of-type)::after {
+  content: '/';
+  margin: 0 5px;
+}
+
+.footer_menu {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 10px;
+    margin: auto;
+    background-color: #C9BCDB;
+}
+
+ul.footer_menu {
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer_menu li {
+  display: inline-block;
+}
+
+.footer_menu li a {
+  text-decoration: none;
+  color: grey;
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 15px;
+}
+
+.footer_element:not(:last-of-type)::after {
+  content: '-';
+  color: grey;
+  margin: 0 15px;
+}
+
+.home_text {
+  font-family: "Didot", cursive, sans-serif;
+  text-align: justify;
+  font-size: 16px;
+  max-width: 1000px;
+  margin-left: 150px;
+  padding: 20px;
+
+}
+
+.slider-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.featuredServices_text {
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 30px;
+  position: relative;
+  margin-left: 150px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: #C9BCDB
+  text-align: center;
+}
+
+.slider-element {
+  display: none;
+  margin-left: 170px;
+  margin-bottom: 60px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 10px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.caption {
+  color: #493663;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: left;
+  font-family: "Didot", cursive, sans-serif;
+}
+
+#white_font {
+  color: white;
+  bottom: 440px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+.about {
+  width: 450px;
+  height: 500px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 150px;
+  text-align: justify;
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 17px;
+}
+
+.about #video {
+  position: relative;
+  bottom: 60px;
+  margin: 60px;
+}
+
+.services_container {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 250px;
+}
+
+.serviceLine_container
+{
+  height: 220px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  margin: auto;
+  padding-left: 100px;
+}
+.service_element {
+  height: 200px;
+  width: 400px;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.service_element p {
+  text-align: justify;
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  position: absolute;
+}
+
+.service_element img {
+  height: 180px;
+  width: 300px;
+  position: absolute;
+}
+
+.service_element button {
+  position: absolute;
+  top: 90px;
+  height: 30px;
+  width: 180px;
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid grey;
+  color: grey;
+  cursor: pointer;
+}
+
+.service_element button:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.gallery_container {
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
+
+ .images {
+  width: 300px;
+  height: 180px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.large {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.large-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact_form {
+  max-width: 500px;
+  height: 600px;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  display: inline-block;
+
+}
+
+input[type=text], select, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 12px;
+}
+
+select {
+  height: 40px;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 12px;
+  background-color: #544171;
+  color: white;
+  width: 130px;
+  height: 50px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact_adress {
+  position: relative;
+  max-width: 500px;
+  bottom:200px;
+  left: 50px;
+  display: inline-block;
+}
+
+.contact_adress p {
+  font-family: "Didot", cursive, sans-serif;
+  font-size: 15px;
+  padding: 15px;
+}
