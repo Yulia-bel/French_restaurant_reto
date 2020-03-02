@@ -16,3 +16,5 @@ Java Script was used for a slider gallery on the Home page, representing feature
 Project files are structured by the layer into sub folders - HTML, CSS, Java Script and used images.
 
 Additional documents include Project plan and wireframes layouts in PDF.
+
+After testing the page did't turn out to be cross-platform compatible which must be improved. Also improvements on increasing responsiveness are required.
